@@ -1,8 +1,13 @@
 #include <stdio.h>
 
 int main (){
-    printf("Desafio Super Trunfo!\n");
-    printf("Novo commit");
+    char Estado;
+    char codigo [30];
+    char Nome[30];
+    int população;
+    float Area;
+    float PIB;
+    int numero;
 
-
+    
 }
