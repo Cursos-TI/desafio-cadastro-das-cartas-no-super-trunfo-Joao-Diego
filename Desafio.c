@@ -1,29 +1,51 @@
 #include <stdio.h>
 
-int main (){
+int main() {
     char Estado;
-    char codigo [30];
-    char Nome[30];
-    int população;
-    float Area;
+    char Nome[300];
+    char Codigo[300];
+    float Populacao;
+    float Area;  
     float PIB;
-    int numero;
+    int NumTur;
 
-    printf("Nome do Estado: ");
-    scanf("%d", &Estado);
-    printf("Nome do Estado é: %d \n", Estado);
+    
+    printf("Digite o nome do Estado : ");
+    scanf("%s", &Estado);
 
+    
     printf("Nome da Cidade: ");
-    scanf("%d", &Nome);
-    printf("Nome da Cidade é: %d \n", Nome);
+    scanf("%s", Nome);
 
     printf("Codigo da Carta: ");
-    scanf("%s", &codigo);
-    printf("O cogigo é: %s \n", codigo);
+    scanf("%s", Codigo);
 
-    printf("Número da População: ");
-    scanf("%f", população);
-    printf("Número da População é: %f \n", população);
+    
+    printf("Quantidade de area: ");
+    scanf("%f", &Area);
+
+    
+    printf("Populacao: ");
+    scanf("%f", &Populacao);
+
+    
+    printf("PIB: ");
+    scanf("%f", &PIB);
+
+    
+    printf("Numero de turistas: ");
+    scanf("%d", &NumTur);
 
 
+    printf("Dados Coletados:\n");
+    printf("Estado: %c\n", Estado);
+    printf("Nome da Cidade: %s\n", Nome);
+    printf("Codigo da Carta: %s\n", Codigo);
+    printf("Area: %.2f\n", Area);
+    printf("Populacao: %.2f\n", Populacao);
+    printf("PIB: %.2f\n", PIB);
+    printf("Numero de turistas: %d\n", NumTur);
+
+    return 0;
 }
+   
